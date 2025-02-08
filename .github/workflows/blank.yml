@@ -35,6 +35,6 @@ jobs:
       - name: Run a multi-line script
         shell: powershell
         run: |
-          Start-Process powershell -Verb runAs -ArgumentList "-Command 'schtasks /run /TN 'RunPS1After30Seconds' /I'"
+          Start-ScheduledTask -TaskName "RunPS1After30Seconds"
           echo Add other actions to build
           
