@@ -35,6 +35,6 @@ jobs:
       - name: Run a multi-line script
         shell: powershell
         run: |
-          Start-Process powershell -Verb runAs -ArgumentList '-File "C:\scripts\StartBatExecution.ps1"'
+          Start-Process powershell -Verb runAs -ArgumentList "-Command 'schtasks /run /TN 'RunPS1After30Seconds' /I'"
           echo Add other actions to build
           
