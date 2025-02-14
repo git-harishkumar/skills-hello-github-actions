@@ -35,6 +35,7 @@ jobs:
       - name: Run a multi-line script
         shell: powershell
         run: |
-          Start-ScheduledTask -TaskName "RunPS1After30Seconds"
-          echo Add other actions to build
+          C:\scripts\command1.ps1
+          #Start-ScheduledTask -TaskName "RunPS1After30Seconds"
+          #echo Add other actions to build
           
